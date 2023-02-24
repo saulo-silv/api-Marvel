@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { useState } from "react";
 
 import Container from "./Container";
@@ -22,22 +23,12 @@ export default function Home() {
     if (args === "") return;
 
     try {
-      return await fetchHeros(args);
+      const data = await fetchHeros(args);
+      setHeroes(data);
     } catch (err) {
       return err;
     }
   };
-
-  if (heroes) {
-    cards = heroes.map((hero) => (
-      <Card
-        name={hero.name}
-        key={hero.id}
-        id={hero.id}
-        thumbnail={`${hero.thumbnail.path}/${IMG_FANTASTIC}.${hero.thumbnail.extension}`}
-      />
-    ));
-  }
 
   return (
     <Container>
@@ -50,7 +41,16 @@ export default function Home() {
         setError={setError}
       />
 
-      <Grid>{cards ? cards : null}</Grid>
+      <Grid>
+        {heroes.map((hero) => (
+          <Card
+            name={hero.name}
+            key={hero.id}
+            id={hero.id}
+            thumbnail={`${hero.thumbnail.path}/${IMG_FANTASTIC}.${hero.thumbnail.extension}`}
+          />
+        ))}
+      </Grid>
     </Container>
   );
 }

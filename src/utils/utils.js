@@ -5,7 +5,7 @@ const getHash = (ts, privateKey, publicKey) => {
   return MD5(ts + privateKey + publicKey).toString();
 };
 
-
+  
 let API_URL = process.env.REACT_APP_BASE_URL;
 
 const fetchHeros = async (name) => {
@@ -21,7 +21,7 @@ const fetchHeros = async (name) => {
     let response = await fetch(url);
     let data = await response.json();
     console.log(data);
-    return [data.data.results];
+    return data.data.results;
   } catch (err) {
     console(err);
     return;
