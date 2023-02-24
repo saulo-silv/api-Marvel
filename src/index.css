@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 16px;
   min-height: 100%;
@@ -13,6 +14,7 @@ html {
 
 body {
   min-height: 100vh;
+  
 }
 
 h2,
@@ -23,12 +25,14 @@ p {
 
 li {
   list-style: none;
+  
 }
 
 a,
 a:visited {
   text-decoration: none;
   color: inherit;
+  
 }
 
 button {
@@ -38,16 +42,18 @@ button {
   font-weight: 700;
   padding: 0.5em 1.25em;
   cursor: pointer;
-  border-radius: 0.3rem;
+  border-radius: 0.9rem;
   border: none;
+  margin: 1rem;
 }
 
 form {
-  display: flex;
   flex-direction: column;
   gap: 0.3rem;
   max-width: 100%;
-  margin: 1rem 0;
+  margin: 1rem;
+
+  
 }
 
 form input {
@@ -55,7 +61,8 @@ form input {
   font-size: 1rem;
   font-family: inherit;
   border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.3rem;
+  border-radius: 0.9rem;
+  
 }
 
 /* Navbar */
