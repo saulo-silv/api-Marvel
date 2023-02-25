@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color:rgba(19, 13, 55, 1)
+}
 
 
 html {
@@ -35,8 +38,9 @@ a:visited {
   
 }
 
+/*lupa*/
 button {
-  background-color: rgb(69, 126, 249);
+  background-color:white;
   color: white;
   font-size: 1rem;
   font-weight: 700;
@@ -114,6 +118,7 @@ header {
 
 .title {
   text-align: center;
+  color: white;
 }
 
 .card img {
