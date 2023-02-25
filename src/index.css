@@ -5,9 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color:rgba(19, 13, 55, 1)
 }
+
 
 
 html {
@@ -29,6 +31,7 @@ p {
 li {
   list-style: none;
   
+  
 }
 
 a,
@@ -37,14 +40,13 @@ a:visited {
   color: inherit;
   
 }
-
-/*lupa*/
+/*  */
 button {
   background-color:white;
   color: white;
   font-size: 1rem;
   font-weight: 700;
-  padding: 0.5em 1.25em;
+  padding: 0.5em 1.00em;
   cursor: pointer;
   border-radius: 0.9rem;
   border: none;

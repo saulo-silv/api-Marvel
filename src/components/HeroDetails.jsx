@@ -27,7 +27,7 @@ export default function HeroDetails() {
     thumbnailPath = hero.data.data.results[0].thumbnail.path;
     thumbnailExtension = hero.data.data.results[0].thumbnail.extension;
     thumbnailUrl = `${thumbnailPath}.${thumbnailExtension}`;
-    series = hero.data.results[0].series.items;
+    series = hero.data.data.results[0].series.items;
   }
 
   if (!hero) return;
@@ -37,16 +37,16 @@ export default function HeroDetails() {
       <div className="hero__details-container">
         <img src={thumbnailUrl} alt="hero image full size" />
         <div className="hero__details">
-          <h4>Nome</h4>
+          <h4>name</h4>
           <p>{name}</p>
           {description ? (
             <>
-              <h4>Descrição</h4>
+              <h4>description</h4>
               <p>{description}</p>
             </>
           ) : null}
           <div className="hero__series">
-            <h4>Series</h4>
+            <h4>series</h4>
             <ul>
               {series
                 ? series.map((title) => (

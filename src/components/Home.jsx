@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { useState } from "react";
 
 import Container from "./Container";
@@ -33,7 +32,7 @@ export default function Home() {
   return (
     <Container>
       <div className="title">
-        <h1>Descobrir heroes da marvel</h1>
+        <h1>Marvelous Universe</h1>
       </div>
       <SearchBar
         handleClick={handleClick}
