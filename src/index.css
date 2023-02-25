@@ -73,13 +73,14 @@ form input {
 
 /* Navbar */
 .navbar {
-  width: min(90%, 75rem);
   margin: 0 auto;
-  min-height: 3rem;
-  display: flex;
+  min-height: 1rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color:rgba(19, 13, 55, 1);
+
+  color: white;
 }
 
 .navbar ul {
