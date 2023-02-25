@@ -27,7 +27,7 @@ export default function HeroDetails() {
     thumbnailPath = hero.data.data.results[0].thumbnail.path;
     thumbnailExtension = hero.data.data.results[0].thumbnail.extension;
     thumbnailUrl = `${thumbnailPath}.${thumbnailExtension}`;
-    series = hero.data.data.results[0].series.items;
+    series = hero.data.results[0].series.items;
   }
 
   if (!hero) return;
