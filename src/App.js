@@ -5,8 +5,9 @@ import About from "./components/About";
 import HeroDetails from "./components/HeroDetails";
 import Home from "./components/Home";
 
-import Loogo from'./components/Images/marvel.jpg';
+import Footer from "./components/Footer";
 
+import Loogo from'./components/Images/marvel.jpg';
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/:id" element={<HeroDetails />} />
       </Routes>
+      < Footer />
     </Router>
   );
 }
