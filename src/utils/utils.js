@@ -47,13 +47,11 @@ const fetchHero = async (id) => {
   let url = `${heroUrl}?ts=${ts}&apikey=${apiKey}&hash=${hash}`;
 
   try {
-    axios({
-      method: "GET",
-      url: "https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=81a7e3759ba5a8d50578600e0aa3cad6&hash=3a99aa23d3c11aba1f76bbfce533affb",
-    }).then((data) => console.log(data.data.data.results));
+    const result = await axios({method: "GET",url});
+    return result.data.data.results
   } catch (err) {
     console.error(err);
-    return;
+    return err;
   }
 };
 
