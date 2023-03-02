@@ -1,12 +1,9 @@
 import React from "react";
-
 import { useState } from "react";
-
 import Container from "./Container";
 import SearchBar from "./SearchBar";
 import Grid from "./Grid";
 import Card from "./Card";
-
 import { fetchHeros } from "../utils/utils";
 
 const IMG_FANTASTIC = "portrait_fantastic";
@@ -14,8 +11,6 @@ const IMG_FANTASTIC = "portrait_fantastic";
 export default function Home() {
   const [heroes, setHeroes] = useState([]);
   const [error, setError] = useState();
-
-  let cards;
 
   const handleClick = async (e, args) => {
     e.preventDefault();

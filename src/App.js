@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import NavItem from "./components/Navbar/NavItem";
 import Logo from "./components/Navbar/Logo";
 import About from "./components/About";
-import HeroDetails from "./components/HeroDetails";
+import HeroDetails from "./components/HeroDetails.jsx";
 import Home from "./components/Home";
 
 import Footer from "./components/Footer";

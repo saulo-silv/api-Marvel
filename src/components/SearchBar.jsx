@@ -1,7 +1,5 @@
 import React, { useRef } from "react";
-
-import { fetchHeroes } from "../utils/utils";
-
+//import { fetchHeroes } from "../utils/utils";
 import Button from "./Button";
 
 export default function SearchBar({ handleClick, setHeroes, setError }) {
