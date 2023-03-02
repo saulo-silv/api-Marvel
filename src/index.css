@@ -24,8 +24,10 @@ body {
 
 h2,
 h3,
+h4,
 p {
   margin-bottom: 1em;
+  color: white;
 }
 
 li {
@@ -176,6 +178,9 @@ header {
 .hero__details li {
   list-style: disc;
   margin-left: 1.5rem;
+}
+.hero__series{
+  color: white;
 }
 .footer {
   color: white;

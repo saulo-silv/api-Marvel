@@ -54,16 +54,16 @@ export default function HeroDetails() {
           />
         ) : null}
         <div className="hero__details">
-          <h4>name</h4>
+          <h4>Name</h4>
           <p>{hero[0].name}</p>
           {hero[0].description ? (
             <>
-              <h4>description</h4>
+              <h4>Description</h4>
               <p>{hero[0].description}</p>
             </>
           ) : null}
           <div className="hero__series">
-            <h4>series</h4>
+            <h4>Series</h4>
             <ul>
               {hero[0].series
                 ? hero[0].series.items.map((item) => (
