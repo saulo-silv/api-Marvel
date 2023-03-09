@@ -6,7 +6,7 @@ export default function SearchBar({ handleClick, setHeroes, setError }) {
   let input = useRef();
   return (
     <form>
-      <input type="text" placeholder="Pesquisar Heroi" ref={input} />
+      <input type="text" placeholder="Pesquisar Hero" ref={input} />
       <Button
         text={"🔍"}
         handleClick={(e) => {

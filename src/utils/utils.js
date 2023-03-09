@@ -1,6 +1,10 @@
 import axios from "axios";
 import { MD5 } from "crypto-js";
 
+//key public: 81a7e3759ba5a8d50578600e0aa3cad6
+//key private: b116d0b0d900ee102e62f03d08b199e95d1fa8e2
+//ts: 1
+
 let API_URL = process.env.REACT_APP_BASE_URL;
 
 const getHash = (ts, privateKey, publicKey) => {
