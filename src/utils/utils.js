@@ -16,7 +16,6 @@ const fetchHeros = async (name) => {
   let hash = getHash(ts, privateKey, apiKey);
   let url = `${heroUrl}?ts=${ts}&apikey=${apiKey}&hash=${hash}&nameStartsWith=${name}`;
 
-//faz uma requisição HTTP e retorna o resultado da resposta, ou um valor nulo caso ocorra algum erro.
   try {
     const response = await axios.get(url);
     return response.data.data.results;
