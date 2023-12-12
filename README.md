@@ -1,3 +1,5 @@
+I’m excited to share that this project is being hosted using Vercel. Check out the live site here: marvel-rho.vercel.app!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
